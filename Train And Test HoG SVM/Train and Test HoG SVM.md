@@ -17,10 +17,15 @@ From the classifier object returned from this function, the important fields are
 Using the OpenCV Trained Classifier
 -----------------------------------
 First a HOGDescriptor object must be created using the window, block and cell size, block stride and number of ‘bins’ or orientations used by the training function. Currently the values are as follows:
+
 Window size: 57,96
+
 Block size: 3,3
+
 Block stride: 3,3
+
 Cell size: 3,3
+
 Number of bins: 9
 
 Next, the bias and beta values have to be inserted in, add the bias value to the end of the beta vector then use the setSVMDetector member function with the beta/bias vector as the argument. To run the classifier over an image, call detectMultiScale. 
