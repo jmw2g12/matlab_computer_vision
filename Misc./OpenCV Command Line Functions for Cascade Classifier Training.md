@@ -1,7 +1,7 @@
-#OpenCV Command Line Functions for Cascade Classifier Training
+OpenCV Command Line Functions for Cascade Classifier Training
 
 Generating Samples
-------------------
+——————————————————
 Once all your positive and negative images have been created, make a new cascade training directory and put the positives and negatives within two folders. You will need two info files, one for positive and one for negative. The negative one simply lists the negative images, use this command (replacing values within the <> symbols):
 
 ls <neg_folder_name> | sed ’s/^/<neg_folder_name>\//g’ > negs.info
@@ -21,4 +21,4 @@ Make another directory where the classifier files will be stored. Now you’re r
 If you find that instead of generating samples, a window appears showing you samples then it’s likely that the -vec argument specifies a .vec file already created and the command perceives this as a wish to view it rather than overwrite it.
 
 Training the Cascade
---------------------
+————————————————————
