@@ -1,0 +1,9 @@
+Files and Images Previously Created
+
+- An ‘urban’ SketchUp environment including 6 models.
+- A ‘rural’ SketchUp environment including 6 models.
+- A more realistic Haiti SketchUp environment including several simple, custom made damaged houses.
+
+- 2962 negative images from urban and rural worlds in SketchUp, at sizes 854x480 and 57x96.
+- 6157 positive images from models in the urban and rural worlds in SketchUp, at sizes 854x480 (with lots of background) and a thinner 57x96.
+- 26658 negative images using my GetTiles function in Matlab on the original negative set, in sizes 284x161, 32x32, 16x16 and 8x8.
