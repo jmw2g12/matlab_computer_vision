@@ -1,4 +1,4 @@
-Train and Test HOG SVM
+#Train and Test HOG SVM
 
 Introduction
 ------------
