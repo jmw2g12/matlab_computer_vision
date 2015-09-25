@@ -26,7 +26,8 @@ If you find that instead of generating samples, a window appears showing you sam
 
 Training the Cascade
 --------------------
-The next step is running the training function, **opencv_traincascade**. Here is a breakdown of the arguments:
+The next step is running the training function, **opencv_traincascade**. Remember that the values you choose for the number of stages and false positive levels should reflect the size of your sample set.
+Here are a breakdown of the arguments:
 
 **-data**: The empty directory where your classifier will be stored.
 
@@ -40,15 +41,15 @@ The next step is running the training function, **opencv_traincascade**. Here is
 
 **-precalcValBufSize**: The buffer size for calculated features.
 
-**-precalcIdxBufSize**: The buffer size for calculated features' index.
+**-precalcIdxBufSize**: The buffer size for calculated features' index. The more you give this the faster the training should perform although if you try give it too much it will fail all together! I usually gave 1024 or 2048.
 
 **-w**: The width of the samples created in the previous stage.
 
 **-h**: The height of the samples created in the previous stage.
 
-**-minHitRate**: The intended minimum hit rate for each stage of the cascade.
+**-minHitRate**: The intended minimum hit rate for each stage of the cascade, 0.95-0.999 is expected.
 
-**-maxFalseAlarmRate**: The intended maximum false positive rate for each stage of the cascade. For both this parameter and the previous you can *estimate* the total rate by taking these values to the power of the number of stages.
+**-maxFalseAlarmRate**: The intended maximum false positive rate for each stage of the cascade, 0.5 is regularly used. For both this parameter and the previous you can *estimate* the total rate by taking these values to the power of the number of stages.
 
 **-maxDepth**: The maximum depth of weak trees, choosing 1 is standard.
 
